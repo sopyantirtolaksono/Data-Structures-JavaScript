@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Queue</title>
+</head>
+<body>
+
+	<h3>Struktur Data Queue ~ First IN First OUT</h3>
+
+
+
+	<script type="text/javascript">
+		let antrian = [];
+
+		let pushAntrian = function(nama, antrian) {
+			antrian.push(nama);
+			console.log(antrian);
+		}
+
+		let prosesQueue = function(antrian) {
+			antrian.shift();
+			console.log(antrian);
+			if(antrian.length < 1) {
+				console.log("Antrian kosong.");
+			}
+		}
+	</script>
+
+</body>
+</html>

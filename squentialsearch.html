@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Squential Search</title>
+</head>
+<body>
+
+	<h3>Struktur Data Squential Search ~ Searching</h3>
+
+
+
+	<script type="text/javascript">
+		// Data yang dicari
+		let data = [15, 9, 18, 7];
+		let target = 18;
+		let nihil
+
+		let squentialSearch = function() {
+			for(let i = 0; i < data.length; i++) {
+				if(data[i] === target) {
+					console.log(`Data ${target} ditemukan pada index ke ${i}`);
+					break;
+				} else {
+					nihil = "data tidak ditemukan.";
+				}
+				console.log(`Pada index ke ${i} ${nihil}`);
+			}
+		}
+	</script>
+
+</body>
+</html>
